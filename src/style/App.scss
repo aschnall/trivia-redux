@@ -1,0 +1,91 @@
+@import 'config';
+@import 'menu';
+@import 'responsive';
+
+body {
+    background-color: $background-color;
+}
+
+.container {
+    margin-top: 7rem;
+
+
+    strong {
+        position: absolute;
+        top: 12%;
+        left: 18%;
+        color: #00000f;
+        font-size: 1.2rem;
+    }
+
+    .question-display {
+        display: flex;
+        width: 65vw;
+        margin: 0 auto 10px auto;
+        border: 5px solid #00000f;
+        background-color: $primary-color;
+        padding: 5px;
+        border-radius: 15px;
+        
+        .question-text h1 {
+            margin: 20px 0 0 10px;
+            font-size: 1.5rem;
+            color: $text-color;
+        }
+
+
+        .choice-wrapper {
+            display: grid;
+            min-width: 20vw;
+            margin-left: auto;
+
+            .choice {
+                margin: 5px 5px;
+                font-size: 20px;
+                padding: 5px;
+                border-radius: 10px;
+                color: $text-color;
+                background: $secondary-color;
+                background-position: right bottom;
+                
+                &:hover {
+                    cursor: pointer;
+                    background-color: $hover-color;
+                }
+
+                &:focus, &:active {
+                    outline: none;
+                    box-shadow: none;
+                }
+                &-correct {
+                    background: linear-gradient(to right, #39A214 50%, $secondary-color 50%);
+                    background-size: 200% 100%;
+                    @include selectedChoiceTransition;
+                }
+                &-incorrect {
+                    background: linear-gradient(to right, #EE5938 50%, $secondary-color 50%);
+                    background-size: 200% 100%;
+                    @include selectedChoiceTransition;
+                }
+            }
+        }
+    }
+}
+
+.next {
+    @include flex-center;
+    
+    button {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: $text-color;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $hover-color;
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+.menu {
+	margin-top: 10%;
+}
+
+.heading {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.heading h1 {
+	font-size: 65px;
+	margin: 0 auto;
+}
+
+.start {
+	display: flex;
+}
+
+.start button {
+	font-size: 26px;
+	padding: 10px 25px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #000b5df2;
+	color: #fefff3;
+	margin: 0 auto;
+}
+
+.start button:hover {
+	cursor: pointer;
+	background-color: #1b0ef3;
+}
+
+.menu-end {
+	margin-top: 10%;
+}
+.score {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.score h2 {
+	font-size: 55px;
+	margin: 0 auto;
+}
+
+.restart {
+	display: flex;
+}
+
+.restart button {
+	font-size: 26px;
+	padding: 10px 25px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #000b5df2;
+	color: #fefff3;
+	margin: 0 auto;
+}
+
+.restart button:hover {
+	cursor: pointer;
+	background-color: #1b0ef3;
+}
+
+

@@ -1,0 +1,64 @@
+@include media-sm {
+    .container {
+        .question-display {
+            flex-direction: column;
+
+            .question-text {
+                margin-bottom: 0.7rem;
+                text-align: center
+            }
+
+            .choice-wrapper {
+                margin-left: 0 !important;
+            }
+        }
+    }
+    .menu-end {
+        .score {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .restart {
+            button {
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@include media-xs {
+    .container {
+        
+        strong {
+            font-size: 1rem !important;
+        }
+
+        .question-display {
+            flex-direction: column;
+
+            .question-text {
+                margin-bottom: 0.7rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.1rem !important;
+                }
+            }
+
+            .choice-wrapper {
+                margin-left: 0;
+
+                .choice {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+
+        .next button {
+            font-size: 1rem;
+            padding: 5px;
+        }
+    }
+}

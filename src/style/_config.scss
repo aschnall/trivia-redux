@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$background-color: #28a5ff6b;
+$primary-color: #000b5df2;
+$secondary-color: #0095ff;
+$text-color: #fefff3;
+$hover-color: #1b0ef3;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin selectedChoiceTransition {
+    background-position: left bottom;
+    transition: all .5s ease-out;
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-xs {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}

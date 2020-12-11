@@ -1,0 +1,66 @@
+@import 'responsive';
+
+.menu {
+    margin-top: 8rem;
+
+    .heading {
+        @include flex-center;
+        margin-bottom: 0.5rem;
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+
+    .start {
+        @include flex-center;
+
+        button {
+            font-size: 1.5rem;
+            padding: 10px 25px;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $text-color;
+    
+
+            &:hover {
+                cursor: pointer;
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+.menu-end {
+	margin-top: 6rem;
+
+    .score {
+        @include flex-center;
+        margin-bottom: 0.5rem;
+
+        h2 {
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+
+    .restart {
+        @include flex-center;
+    
+        button {
+            font-size: 1.5rem;
+            padding: 10px 25px;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $text-color;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+

@@ -41,9 +41,9 @@ const initialState = {
 const updateState = (state=initialState, action) => {
     switch(action.type) {
         case 'START_GAME':
-            return { ...state, start: true }
+            return { ...state, start: true, score: 0 }
         case 'GAME_OVER':
-            return {...state, gameOver: true, start: false, select: false, questionIndex: 0, score: 0 }
+            return {...state, gameOver: true, start: false, select: false, questionIndex: 0 }
         case 'CHOICE_SELECTED':
             return {...state, select: true };
         case 'RESET_SELECT':

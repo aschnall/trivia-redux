@@ -16,7 +16,7 @@ const questionReducer = (state=initialQuestionState, action) => {
                     question: question.question
                 }
                 const answerChoices = [...question.incorrect_answers];
-                formattedQuestions.answer = Math.floor(Math.random() * 3);
+                formattedQuestions.answer = Math.floor(Math.random() * 4);
                 answerChoices.splice(formattedQuestions.answer, 0, question.correct_answer);
                 formattedQuestions.choices = [];
                 answerChoices.forEach((choice, index) => {

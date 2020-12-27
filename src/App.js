@@ -14,8 +14,7 @@ class App extends Component {
 	render() {
 		const { start } = this.props;
 		return (
-			start ? <QuestionDisplay /> : 
-							<StartMenu />
+			start ? <QuestionDisplay /> : <StartMenu />
 		);
 	}
 }
